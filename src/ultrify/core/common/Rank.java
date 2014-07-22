@@ -9,15 +9,15 @@ import org.bukkit.entity.Player;
 public enum Rank
 {
   OWNER("Owner", ChatColor.DARK_RED), 
-  DEVELOPER("Dev", ChatColor.RED), 
-  ADMIN("Admin", ChatColor.RED), 
+  DEVELOPER("Dev", ChatColor.DARK_AQUA), 
+  ADMIN("Admin", ChatColor.PURPLE), 
   MODERATOR("Mod", ChatColor.GOLD), 
-  HELPER("Helper", ChatColor.GREEN), 
+  HELPER("Helper", ChatColor.YELLOW), 
   BUILDER("Builder", ChatColor.BLUE), 
   YOUTUBE("Legend", ChatColor.DARK_GREEN), 
-  HERO("Hero", ChatColor.LIGHT_PURPLE), 
-  ULTRA("Ultra", ChatColor.AQUA), 
-  ALL("All", ChatColor.YELLOW);
+  ELITE("Elite", ChatColor.RED), 
+  PRO("Pro", ChatColor.AQUA), 
+  ALL("All", ChatColor.LIGHT_BLUE);
   
   private ChatColor Color;
   public String Name;
@@ -40,7 +40,7 @@ public enum Rank
     }
     if (inform)
     {
-      UtilPlayer.message(player, C.mHead + "Permissions > " + 
+      UtilPlayer.message(player, C.mHead + "Permissions> " + 
         C.mBody + "This requires Permission Rank [" + 
         C.mHead + rank + 
         C.mBody + "].");
