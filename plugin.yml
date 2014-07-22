@@ -1,0 +1,3 @@
+name: Hub
+main: ultrify.core.common.Rank
+version: 0.1
